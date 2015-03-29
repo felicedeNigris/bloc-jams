@@ -18,3 +18,4 @@ This is HTML5 application, built with [Brunch](http://brunch.io).
 
 * URL to the Heroku Application is : http://bloc-jams-felice.herokuapp.com/
 
+* URL page for album view is : http://localhost:3000/album.html
