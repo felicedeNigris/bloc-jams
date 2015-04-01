@@ -16,6 +16,11 @@ This is HTML5 application, built with [Brunch](http://brunch.io).
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * [Brunch site](http://brunch.io), [Chaplin site](http://chaplinjs.org)
 
+
+
+# DEMO 
+# URLS for this project
+
 * URL to the Heroku Application is : http://bloc-jams-felice.herokuapp.com/
 
-* URL page for album view is : http://localhost:3000/album.html
+* URL page for album view is : http://bloc-jams-felice.herokuapp.com/album.html 
