@@ -3,15 +3,18 @@ html {
 
 body {
   font-family: 'Open Sans';
-  color: white;
+  color: #FFF;
   min-height: 100%;
   background: linear-gradient(0deg, #2b1339, #380c77); }
+
 
 body.landing {
   background: #5b5579; }
 
+
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
+
 
 body.landing .navbar {
   margin-bottom: 0;
@@ -58,8 +61,13 @@ body.landing .navbar {
   margin-bottom: 20px; }
 
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
+<<<<<<< HEAD
   color:#FFF;
   line-height: 150%; }
+=======
+  line-height: 150%;
+  color: white; }
+>>>>>>> collection-jquery
 
 .album-header-information h3 {
   font-size: 48px;
@@ -105,5 +113,8 @@ body.landing .navbar {
     max-width: 100%;
   }  
 
+  td{
+    color:white;
+  }
 
 /*# sourceMappingURL=app.css.map*/

@@ -92,6 +92,17 @@
 })();
 require.register("scripts/app", function(exports, require, module) {
 require("./landing");
+require('./collection');
+
+});
+
+;require.register("scripts/collection", function(exports, require, module) {
+if (document.URL.match(/\/collection.html/)) {
+   // Wait until the HTML is fully processed.
+   $(document).ready(function() {
+    console.log("collection.js");
+   });
+ }
 
 });
 
