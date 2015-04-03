@@ -61,13 +61,9 @@ body.landing .navbar {
   margin-bottom: 20px; }
 
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
-<<<<<<< HEAD
+
   color:#FFF;
   line-height: 150%; }
-=======
-  line-height: 150%;
-  color: white; }
->>>>>>> collection-jquery
 
 .album-header-information h3 {
   font-size: 48px;
