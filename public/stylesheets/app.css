@@ -58,6 +58,7 @@ body.landing .navbar {
   margin-bottom: 20px; }
 
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
+  color:#FFF;
   line-height: 150%; }
 
 .album-header-information h3 {
@@ -76,6 +77,7 @@ body.landing .navbar {
   font-weight: 300; }
 
 .table.album-song-listing td {
+  color:#FFF;
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
