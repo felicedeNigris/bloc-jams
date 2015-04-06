@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (function(/*! Brunch !*/) {
   'use strict';
 
@@ -197,3 +198,7 @@ $( ".navbar-header" ).click(function() {
 
 ;
 //# sourceMappingURL=app.js.map
+=======
+
+/*# sourceMappingURL=app.js.map*/
+>>>>>>> collection-view

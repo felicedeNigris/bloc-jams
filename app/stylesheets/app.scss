@@ -15,6 +15,15 @@ html {
     background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
   }
 
+<<<<<<< HEAD
+=======
+  body.collection{
+    background: linear-gradient(0deg, #2b1339, #380c77);
+    background: -webkit-linear-gradient(0deg, #2b1339, #380c77);
+  }
+
+   // medium-purple: #7B46A3 - 123, 70, 163
+>>>>>>> collection-view
  
  .player-header-nav {
    background-color: rgba(123, 70, 163, 0.9);
@@ -109,3 +118,26 @@ html {
    padding: 20px;
    border-top: 1px solid rgba(255, 255, 255, .4);
  }
+
+  .collection-album-container {
+     margin-top: 30px;
+     margin-bottom: 20px;
+  }
+  .collection-album-container .caption {
+     margin-top: 10px;
+  }
+  .collection-album-container .caption p {
+     font-size: 16px;
+     font-weight: 300;
+     color: rgba(255, 255, 255, 0.6);
+  }
+  .collection-album-container .caption p a {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .collection-album-container .caption p a.album-name {
+    color: white;
+  }
+ 
+  .collection-album-container img {
+    max-width: 100%;
+  }
