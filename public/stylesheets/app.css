@@ -4,18 +4,21 @@ html {
 body {
   font-family: 'Open Sans';
   color: white;
-  min-height: 100%;
-  background: linear-gradient(0deg, #2b1339, #380c77); }
+  min-height: 100%; }
 
 body.landing {
   background: #5b5579; }
+
+body.collection {
+  background: linear-gradient(0deg, #2b1339, #380c77);
+  background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
 
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
 
 body.landing .navbar {
   margin-bottom: 0;
-   }
+  background: linear-gradient(0deg, #2b1339, #380c77); }
 
 .hero-content {
   background: #2f1d57;
@@ -79,29 +82,26 @@ body.landing .navbar {
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
+.collection-album-container {
+  margin-top: 30px;
+  margin-bottom: 20px; }
 
- .collection-album-container {
-     margin-top: 30px;
-     margin-bottom: 20px;
-  }
-  .collection-album-container .caption {
-     margin-top: 10px;
-  }
-  .collection-album-container .caption p {
-     font-size: 16px;
-     font-weight: 300;
-     color: rgba(255, 255, 255, 0.6);
-  }
-  .collection-album-container .caption p a {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .collection-album-container .caption p a.album-name {
-    color: white;
-  }
- 
-  .collection-album-container img {
-    max-width: 100%;
-  }  
+.collection-album-container .caption {
+  margin-top: 10px; }
+
+.collection-album-container .caption p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6); }
+
+.collection-album-container .caption p a {
+  color: rgba(255, 255, 255, 0.6); }
+
+.collection-album-container .caption p a.album-name {
+  color: white; }
+
+.collection-album-container img {
+  max-width: 100%; }
 
 
 /*# sourceMappingURL=app.css.map*/
