@@ -3,22 +3,10 @@ html {
 
 body {
   font-family: 'Open Sans';
-<<<<<<< HEAD
+
   min-height: 100%;
-  background: linear-gradient(0deg, #2b1339, #380c77); 
-  background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
   }
 
-=======
-  color: white;
-<<<<<<< HEAD
-  min-height: 100%;
-  background: linear-gradient(0deg, #2b1339, #380c77);
-  background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
->>>>>>> collection-jquery
-=======
-  min-height: 100%; }
->>>>>>> collection-view
 
 body.landing {
   background: #5b5579; }
@@ -31,12 +19,10 @@ body.collection {
   background-color: rgba(123, 70, 163, 0.9); }
 
 body.landing .navbar {
-<<<<<<< HEAD
+
   margin-bottom: 0; }
-=======
-  margin-bottom: 0;
-  background: linear-gradient(0deg, #2b1339, #380c77); }
->>>>>>> collection-view
+
+ 
 
 .hero-content {
   background: #2f1d57;
@@ -79,11 +65,10 @@ body.landing .navbar {
   margin-bottom: 20px; }
 
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
-<<<<<<< HEAD
+
 
   color:#FFF;
-=======
->>>>>>> collection-jquery
+
   line-height: 150%; }
 
 .album-header-information h3 {
@@ -124,11 +109,10 @@ body.landing .navbar {
 .collection-album-container .caption p a.album-name {
   color: white; }
 
-<<<<<<< HEAD
-=======
+
 .collection-album-container img {
   max-width: 100%; }
 
 
->>>>>>> collection-view
+
 /*# sourceMappingURL=app.css.map*/

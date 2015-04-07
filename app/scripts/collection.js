@@ -1,8 +1,10 @@
+
+/*
 var buildAlbumThumbnail = function() {
    var template =
        '<div class="collection-album-container col-md-2">'
      + '  <img src="/images/album-placeholder.png"/>'
-     + '  <div class="caption album-collection-info">'
+     + '  <div class="collection-album-info caption">'
      + '    <p>'
      + '      <a class="album-name" href="/album.html"> Album Name </a>'
      + '      <br/>'
@@ -30,5 +32,6 @@ if (document.URL.match(/\/collection.html/)) {
      }
    });
  }
-
-
+*/
+console.log("Hello");
+       

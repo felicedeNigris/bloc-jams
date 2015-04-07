@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 (function(/*! Brunch !*/) {
   'use strict';
 
@@ -155,26 +155,6 @@ if (document.URL.match(/\/collection.html/)) {
     $('.selling-points .point').hover(onHoverAction, offHoverAction);
   
 
-//////////////////////////////// image fade 
-/*
-var onClickImageAction = function(event){
-    console.log('Image Clicked.');
-    $(this).fadeOut(800,function(){
-      console.log("Fading out.");
-    });
-};
-
-var offClickImageAction = function(event){
-    console.log('Image Clicked.');
-    $(this).show();
-};
-
-
-
-$('.navbar-header').click(fadeOut(800,function(){
-      console.log("Fading out.");
-    }
-*/
 $( ".navbar-header" ).click(function() {
   console.log("Image Clicked.");
   $(this).first().fadeOut( "slow", function fadeBackIn() {
@@ -193,8 +173,6 @@ $( ".navbar-header" ).click(function() {
 });
 
 ;
-//# sourceMappingURL=app.js.map
-=======
 
-/*# sourceMappingURL=app.js.map*/
->>>>>>> collection-view
+console.log("Farts");
+

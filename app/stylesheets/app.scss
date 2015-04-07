@@ -2,12 +2,14 @@ html {
     height: 100%;
   }
 
+  
+
+
   body {
     font-family: 'Open Sans';
     color: white;
     min-height: 100%;
-    background: linear-gradient(0deg, #2b1339, #380c77);
-    background: -webkit-linear-gradient(0deg, #2b1339, #380c77);
+
   }
 
   body.landing {
@@ -15,15 +17,14 @@ html {
     background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
   }
 
-<<<<<<< HEAD
-=======
+
   body.collection{
     background: linear-gradient(0deg, #2b1339, #380c77);
     background: -webkit-linear-gradient(0deg, #2b1339, #380c77);
   }
 
    // medium-purple: #7B46A3 - 123, 70, 163
->>>>>>> collection-view
+
  
  .player-header-nav {
    background-color: rgba(123, 70, 163, 0.9);
