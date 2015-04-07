@@ -261,6 +261,7 @@ var changeAlbumView = function(album) {
    $(document).ready(function() {
        changeAlbumView(albumPicasso);
    });
+   
  }
 console.log("this is public/javascripts/app.js");
 

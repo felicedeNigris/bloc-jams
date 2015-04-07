@@ -1,4 +1,4 @@
- var createSongRow = function(songNumber, songName, songLength) {
+var createSongRow = function(songNumber, songName, songLength) {
    var template =
        '<tr>'
      + '  <td class="col-md-1">' + songNumber + '</td>'
@@ -83,3 +83,5 @@ var changeAlbumView = function(album) {
        changeAlbumView(albumPicasso);
    });
  }
+console.log("this is album.js");
+
