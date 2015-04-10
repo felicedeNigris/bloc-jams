@@ -3,12 +3,17 @@ html {
 
 body {
   font-family: 'Open Sans';
+<<<<<<< HEAD
   min-height: 100%;
   background: linear-gradient(0deg, #2b1339, #380c77); 
   background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
   color: #FFF;
   }
 
+=======
+  color: white;
+  min-height: 100%; }
+>>>>>>> jquery-intro
 
 body.landing {
     background: linear-gradient(0deg, #2b1339, #380c77); 
@@ -23,10 +28,15 @@ body.collection {
   background-color: rgba(123, 70, 163, 0.9); }
 
 body.landing .navbar {
+<<<<<<< HEAD
 
   margin-bottom: 0; }
 
  
+=======
+  margin-bottom: 0;
+  background: linear-gradient(0deg, #2b1339, #380c77); }
+>>>>>>> jquery-intro
 
 .hero-content {
   background: #2f1d57;
@@ -117,6 +127,9 @@ body.landing .navbar {
 .collection-album-container img {
   max-width: 100%; }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> jquery-intro
 /*# sourceMappingURL=app.css.map*/

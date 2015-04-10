@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> jquery-intro
 (function(/*! Brunch !*/) {
   'use strict';
 
@@ -93,6 +96,7 @@
 })();
 require.register("scripts/app", function(exports, require, module) {
 require("./landing");
+<<<<<<< HEAD
 require("./collection");
 
 });
@@ -132,6 +136,9 @@ if (document.URL.match(/\/collection.html/)) {
  }
 
 
+=======
+console.log("hello!");
+>>>>>>> jquery-intro
 
 });
 
@@ -155,6 +162,29 @@ if (document.URL.match(/\/collection.html/)) {
     $('.selling-points .point').hover(onHoverAction, offHoverAction);
   
 
+<<<<<<< HEAD
+=======
+//////////////////////////////// image fade 
+/*
+var onClickImageAction = function(event){
+    console.log('Image Clicked.');
+    $(this).fadeOut(800,function(){
+      console.log("Fading out.");
+    });
+};
+
+var offClickImageAction = function(event){
+    console.log('Image Clicked.');
+    $(this).show();
+};
+
+
+
+$('.navbar-header').click(fadeOut(800,function(){
+      console.log("Fading out.");
+    }
+*/
+>>>>>>> jquery-intro
 $( ".navbar-header" ).click(function() {
   console.log("Image Clicked.");
   $(this).first().fadeOut( "slow", function fadeBackIn() {
@@ -173,6 +203,7 @@ $( ".navbar-header" ).click(function() {
 });
 
 ;
+<<<<<<< HEAD
 
 ///////////////////////////////////////////////////// album.js
 
@@ -265,3 +296,6 @@ var changeAlbumView = function(album) {
  }
 console.log("this is public/javascripts/app.js");
 
+=======
+//# sourceMappingURL=app.js.map
+>>>>>>> jquery-intro
