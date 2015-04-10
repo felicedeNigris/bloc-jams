@@ -1,3 +1,5 @@
+console.log("collection.js is here !!");
+
 var buildAlbumThumbnail = function() {
    var template =
        '<div class="collection-album-container col-md-2">'
