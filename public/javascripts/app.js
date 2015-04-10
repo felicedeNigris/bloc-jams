@@ -94,6 +94,8 @@ require.register("scripts/app", function(exports, require, module) {
 require("./landing");
 require("./collection");
 
+console.log("collection.js is here!!!");
+
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
@@ -118,20 +120,33 @@ var buildAlbumThumbnail = function() {
   return $(template);
 };
 
+ var updateCollectionView = function() {
+   var $collection = $(".collection-container .row");
+   $collection.empty();
+ 
+   for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
+       var $newThumbnail = buildAlbumThumbnail();
+       $collection.append($newThumbnail);
+   }
+ };
+ 
 
 if (document.URL.match(/\/collection.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
-      var $collection = $(".collection-container .row");
-     $collection.empty();
-   
+      updateCollectionView();
+
+   });
+ };
+
+   /*
      for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
        var $newThumbnail = buildAlbumThumbnail();
        $collection.append($newThumbnail);
      }
    });
  }
-
+*/
 
 
 });
