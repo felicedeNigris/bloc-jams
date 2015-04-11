@@ -1,3 +1,11 @@
+if (document.URL.match(/\/album.html/)) {
+   // Wait until the HTML is fully processed.
+   $(document).ready(function() {
+     console.log("album.js")
+   });
+ }
+/*
+
  var createSongRow = function(songNumber, songName, songLength) {
    var template =
        '<tr>'
@@ -80,6 +88,9 @@ var changeAlbumView = function(album) {
  if (document.URL.match(/\/album.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
+       console.log("album.js")
        changeAlbumView(albumPicasso);
    });
  }
+
+*/
