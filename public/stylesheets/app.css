@@ -123,12 +123,18 @@ body.landing .navbar {
 .collection-album-container .caption p a.album-name {
   color: white; }
 
+<<<<<<< HEAD
 
 .collection-album-container img {
   max-width: 100%; }
 
 <<<<<<< HEAD
 
+=======
+.collection-album-container img {
+  max-width: 100%; }
+
+>>>>>>> collection-jquery
 
 =======
 >>>>>>> jquery-intro

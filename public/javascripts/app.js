@@ -99,9 +99,13 @@ require("./landing");
 <<<<<<< HEAD
 require("./collection");
 
+console.log("collection.js is here!!!");
+
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
+console.log("collection.js is here !!");
+
 var buildAlbumThumbnail = function() {
    var template =
        '<div class="collection-album-container col-md-2">'
@@ -121,20 +125,33 @@ var buildAlbumThumbnail = function() {
   return $(template);
 };
 
+ var updateCollectionView = function() {
+   var $collection = $(".collection-container .row");
+   $collection.empty();
+ 
+   for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
+       var $newThumbnail = buildAlbumThumbnail();
+       $collection.append($newThumbnail);
+   }
+ };
+ 
 
 if (document.URL.match(/\/collection.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
-      var $collection = $(".collection-container .row");
-     $collection.empty();
-   
+      updateCollectionView();
+
+   });
+ };
+
+   /*
      for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
        var $newThumbnail = buildAlbumThumbnail();
        $collection.append($newThumbnail);
      }
    });
  }
-
+*/
 
 =======
 console.log("hello!");
