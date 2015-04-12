@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 var createSongRow = function(songNumber, songName, songLength) {
+=======
+
+
+ var createSongRow = function(songNumber, songName, songLength) {
+>>>>>>> album-jquery
    var template =
        '<tr>'
      + '  <td class="col-md-1">' + songNumber + '</td>'
@@ -80,8 +86,13 @@ var changeAlbumView = function(album) {
  if (document.URL.match(/\/album.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
+       console.log("album.js")
        changeAlbumView(albumPicasso);
    });
  }
+<<<<<<< HEAD
 console.log("this is album.js");
+=======
+
+>>>>>>> album-jquery
 

@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> jquery-intro
+=======
+>>>>>>> album-jquery
 (function(/*! Brunch !*/) {
   'use strict';
 
@@ -94,6 +97,7 @@
   globals.require.list = list;
   globals.require.brunch = true;
 })();
+<<<<<<< HEAD
 require.register("scripts/app", function(exports, require, module) {
 require("./landing");
 <<<<<<< HEAD
@@ -223,6 +227,9 @@ $( ".navbar-header" ).click(function() {
 <<<<<<< HEAD
 
 ///////////////////////////////////////////////////// album.js
+=======
+require.register("scripts/album", function(exports, require, module) {
+>>>>>>> album-jquery
 
 
  var createSongRow = function(songNumber, songName, songLength) {
@@ -307,12 +314,108 @@ var changeAlbumView = function(album) {
  if (document.URL.match(/\/album.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
+       console.log("album.js")
        changeAlbumView(albumPicasso);
    });
    
  }
-console.log("this is public/javascripts/app.js");
 
+<<<<<<< HEAD
 =======
 //# sourceMappingURL=app.js.map
 >>>>>>> jquery-intro
+=======
+
+
+});
+
+;require.register("scripts/app", function(exports, require, module) {
+require("./landing");
+require("./collection")
+require('./album');
+//console.log("hello from app/scripts/app.js");
+
+});
+
+;require.register("scripts/collection", function(exports, require, module) {
+
+/*
+var buildAlbumThumbnail = function() {
+   var template =
+       '<div class="collection-album-container col-md-2">'
+     + '  <img src="/images/album-placeholder.png"/>'
+     + '  <div class="collection-album-info caption">'
+     + '    <p>'
+     + '      <a class="album-name" href="/album.html"> Album Name </a>'
+     + '      <br/>'
+     + '      <a href="/album.html"> Artist name </a>'
+     + '      <br/>'
+     + '      X songs'
+     + '      <br/>'
+     + '    </p>'
+     + '  </div>'
+     + '</div>';
+
+  return $(template);
+};
+
+
+if (document.URL.match(/\/collection.html/)) {
+   // Wait until the HTML is fully processed.
+   $(document).ready(function() {
+      var $collection = $(".collection-container .row");
+     $collection.empty();
+   
+     for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
+       var $newThumbnail = buildAlbumThumbnail();
+       $collection.append($newThumbnail);
+     }
+   });
+ }
+*/
+console.log("Hello");
+       
+
+});
+
+;require.register("scripts/landing", function(exports, require, module) {
+  $(document).ready(function() { 
+    $('.hero-content h3').click(function(){
+      var subText = $(this).text();
+       $(this).text(subText + "!");
+    });
+ 
+   var onHoverAction = function(event) {
+     console.log('Hover action triggered.');
+     $(this).animate({'margin-top': '10px'});
+   };
+ 
+   var offHoverAction = function(event) {
+     console.log('Off-hover action triggered.');
+     $(this).animate({'margin-top': '0px'});
+   };
+ 
+    $('.selling-points .point').hover(onHoverAction, offHoverAction);
+  
+
+
+$( ".navbar-header" ).click(function() {
+  console.log("Image Clicked.");
+  $(this).first().fadeOut( "slow", function fadeBackIn() {
+    $(".player-header-nav navbar").click(function clickandShow(){
+      $(".navbar-header").show();
+  });
+});
+});
+
+
+
+
+  
+});//end of $(document) function
+
+});
+
+;
+//# sourceMappingURL=app.js.map
+>>>>>>> album-jquery

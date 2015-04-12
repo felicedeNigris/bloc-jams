@@ -3,6 +3,7 @@ require("./landing");
 <<<<<<< HEAD
 require("./collection")
 require('./album');
+<<<<<<< HEAD
 console.log("hello from app/scripts/app.js");
 =======
 console.log("hello!");
@@ -12,3 +13,6 @@ require("./collection");
 
 console.log("collection.js is here!!!");
 >>>>>>> collection-jquery
+=======
+//console.log("hello from app/scripts/app.js");
+>>>>>>> album-jquery

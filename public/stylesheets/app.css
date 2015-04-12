@@ -4,6 +4,7 @@ html {
 body {
   font-family: 'Open Sans';
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: 100%;
   background: linear-gradient(0deg, #2b1339, #380c77); 
   background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
@@ -19,6 +20,16 @@ body.landing {
     background: linear-gradient(0deg, #2b1339, #380c77); 
     background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
   } 
+=======
+  color: white;
+  min-height: 100%;
+  background: linear-gradient(0deg, #2b1339, #380c77);
+  background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
+
+body.landing {
+  background: linear-gradient(0deg, #2b1339, #380c77);
+  background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
+>>>>>>> album-jquery
 
 body.collection {
   background: linear-gradient(0deg, #2b1339, #380c77);
@@ -29,6 +40,7 @@ body.collection {
 
 body.landing .navbar {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   margin-bottom: 0; }
 
@@ -38,6 +50,10 @@ body.landing .navbar {
   background: linear-gradient(0deg, #2b1339, #380c77); }
 >>>>>>> jquery-intro
 
+=======
+  margin-bottom: 0; }
+
+>>>>>>> album-jquery
 .hero-content {
   background: #2f1d57;
   padding: 100px 0; }
@@ -79,10 +95,6 @@ body.landing .navbar {
   margin-bottom: 20px; }
 
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
-
-
-  color:#FFF;
-
   line-height: 150%; }
 
 .album-header-information h3 {
@@ -101,7 +113,6 @@ body.landing .navbar {
   font-weight: 300; }
 
 .table.album-song-listing td {
-  color:#FFF;
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
@@ -124,12 +135,16 @@ body.landing .navbar {
   color: white; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> album-jquery
 .collection-album-container img {
   max-width: 100%; }
 
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 =======
 .collection-album-container img {
   max-width: 100%; }
@@ -138,4 +153,6 @@ body.landing .navbar {
 
 =======
 >>>>>>> jquery-intro
+=======
+>>>>>>> album-jquery
 /*# sourceMappingURL=app.css.map*/
