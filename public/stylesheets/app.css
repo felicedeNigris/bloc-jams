@@ -3,24 +3,6 @@ html {
 
 body {
   font-family: 'Open Sans';
-<<<<<<< HEAD
-<<<<<<< HEAD
-  min-height: 100%;
-  background: linear-gradient(0deg, #2b1339, #380c77); 
-  background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
-  color: #FFF;
-  }
-
-=======
-  color: white;
-  min-height: 100%; }
->>>>>>> jquery-intro
-
-body.landing {
-    background: linear-gradient(0deg, #2b1339, #380c77); 
-    background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
-  } 
-=======
   color: white;
   min-height: 100%;
   background: linear-gradient(0deg, #2b1339, #380c77);
@@ -29,7 +11,6 @@ body.landing {
 body.landing {
   background: linear-gradient(0deg, #2b1339, #380c77);
   background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
->>>>>>> album-jquery
 
 body.collection {
   background: linear-gradient(0deg, #2b1339, #380c77);
@@ -39,21 +20,8 @@ body.collection {
   background-color: rgba(123, 70, 163, 0.9); }
 
 body.landing .navbar {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
   margin-bottom: 0; }
 
- 
-=======
-  margin-bottom: 0;
-  background: linear-gradient(0deg, #2b1339, #380c77); }
->>>>>>> jquery-intro
-
-=======
-  margin-bottom: 0; }
-
->>>>>>> album-jquery
 .hero-content {
   background: #2f1d57;
   padding: 100px 0; }
@@ -134,25 +102,46 @@ body.landing .navbar {
 .collection-album-container .caption p a.album-name {
   color: white; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> album-jquery
 .collection-album-container img {
   max-width: 100%; }
 
-<<<<<<< HEAD
+.collection-album-container .collection-album-image-container {
+  position: relative; }
 
-<<<<<<< HEAD
-=======
-.collection-album-container img {
-  max-width: 100%; }
+.collection-album-container .collection-album-image-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10; }
 
->>>>>>> collection-jquery
+.collection-album-container .collection-overlay-content {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center; }
 
-=======
->>>>>>> jquery-intro
-=======
->>>>>>> album-jquery
+.collection-album-container .collection-overlay-button {
+  font-size: 20px;
+  background-color: white;
+  color: #d2287b;
+  border-radius: 50% 50%;
+  display: inline-block;
+  width: 42px;
+  height: 42px; }
+
+.collection-album-container .collection-overlay-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #d2287b; }
+
+.collection-album-container .collection-overlay-button i {
+  line-height: 42px; }
+
+.collection-album-container .collection-overlay-button .fa-play {
+  padding-left: 5px; }
+
+
 /*# sourceMappingURL=app.css.map*/

@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> jquery-intro
-=======
->>>>>>> album-jquery
 (function(/*! Brunch !*/) {
   'use strict';
 
@@ -97,142 +90,10 @@
   globals.require.list = list;
   globals.require.brunch = true;
 })();
-<<<<<<< HEAD
-require.register("scripts/app", function(exports, require, module) {
-require("./landing");
-<<<<<<< HEAD
-require("./collection");
-
-console.log("collection.js is here!!!");
-
-});
-
-;require.register("scripts/collection", function(exports, require, module) {
-console.log("collection.js is here !!");
-
-var buildAlbumThumbnail = function() {
-   var template =
-       '<div class="collection-album-container col-md-2">'
-     + '  <img src="/images/album-placeholder.png"/>'
-     + '  <div class="caption album-collection-info">'
-     + '    <p>'
-     + '      <a class="album-name" href="/album.html"> Album Name </a>'
-     + '      <br/>'
-     + '      <a href="/album.html"> Artist name </a>'
-     + '      <br/>'
-     + '      X songs'
-     + '      <br/>'
-     + '    </p>'
-     + '  </div>'
-     + '</div>';
-
-  return $(template);
-};
-
- var updateCollectionView = function() {
-   var $collection = $(".collection-container .row");
-   $collection.empty();
- 
-   for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
-       var $newThumbnail = buildAlbumThumbnail();
-       $collection.append($newThumbnail);
-   }
- };
- 
-
-if (document.URL.match(/\/collection.html/)) {
-   // Wait until the HTML is fully processed.
-   $(document).ready(function() {
-      updateCollectionView();
-
-   });
- };
-
-   /*
-     for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
-       var $newThumbnail = buildAlbumThumbnail();
-       $collection.append($newThumbnail);
-     }
-   });
- }
-*/
-
-=======
-console.log("hello!");
->>>>>>> jquery-intro
-
-});
-
-;require.register("scripts/landing", function(exports, require, module) {
-  $(document).ready(function() { 
-    $('.hero-content h3').click(function(){
-      var subText = $(this).text();
-       $(this).text(subText + "!");
-    });
- 
-   var onHoverAction = function(event) {
-     console.log('Hover action triggered.');
-     $(this).animate({'margin-top': '10px'});
-   };
- 
-   var offHoverAction = function(event) {
-     console.log('Off-hover action triggered.');
-     $(this).animate({'margin-top': '0px'});
-   };
- 
-    $('.selling-points .point').hover(onHoverAction, offHoverAction);
-  
-
-<<<<<<< HEAD
-=======
-//////////////////////////////// image fade 
-/*
-var onClickImageAction = function(event){
-    console.log('Image Clicked.');
-    $(this).fadeOut(800,function(){
-      console.log("Fading out.");
-    });
-};
-
-var offClickImageAction = function(event){
-    console.log('Image Clicked.');
-    $(this).show();
-};
-
-
-
-$('.navbar-header').click(fadeOut(800,function(){
-      console.log("Fading out.");
-    }
-*/
->>>>>>> jquery-intro
-$( ".navbar-header" ).click(function() {
-  console.log("Image Clicked.");
-  $(this).first().fadeOut( "slow", function fadeBackIn() {
-    $(".player-header-nav navbar").click(function clickandShow(){
-      $(".navbar-header").show();
-  });
-});
-});
-
-
-
-
-  
-});//end of $(document) function
-
-});
-
-;
-<<<<<<< HEAD
-
-///////////////////////////////////////////////////// album.js
-=======
 require.register("scripts/album", function(exports, require, module) {
->>>>>>> album-jquery
-
 
  var createSongRow = function(songNumber, songName, songLength) {
+
    var template =
        '<tr>'
      + '  <td class="col-md-1">' + songNumber + '</td>'
@@ -317,33 +178,36 @@ var changeAlbumView = function(album) {
        console.log("album.js")
        changeAlbumView(albumPicasso);
    });
-   
  }
 
-<<<<<<< HEAD
-=======
-//# sourceMappingURL=app.js.map
->>>>>>> jquery-intro
-=======
+console.log("this is album.js");
+
 
 
 });
 
 ;require.register("scripts/app", function(exports, require, module) {
+
+console.log("hello from app/scripts/app.js");
+
 require("./landing");
 require("./collection")
 require('./album');
-//console.log("hello from app/scripts/app.js");
+require("./collection");
+
 
 });
 
 ;require.register("scripts/collection", function(exports, require, module) {
 
-/*
+console.log("collection.js is here !!");
+
 var buildAlbumThumbnail = function() {
    var template =
        '<div class="collection-album-container col-md-2">'
-     + '  <img src="/images/album-placeholder.png"/>'
+     + '  <div class="collection-album-image-container">'
+     + '    <img src="/images/album-placeholder.png"/>'
+     + '  </div>'
      + '  <div class="collection-album-info caption">'
      + '    <p>'
      + '      <a class="album-name" href="/album.html"> Album Name </a>'
@@ -358,23 +222,56 @@ var buildAlbumThumbnail = function() {
 
   return $(template);
 };
+ var buildAlbumOverlay = function(albumURL) {
+    var template =
+        '<div class="collection-album-image-overlay">'
+      + '  <div class="collection-overlay-content">'
+      + '    <a class="collection-overlay-button" href="' + albumURL + '">'
+      + '      <i class="fa fa-play"></i>'
+      + '    </a>'
+      + '    &nbsp;'
+      + '    <a class="collection-overlay-button">'
+      + '      <i class="fa fa-plus"></i>'
+      + '    </a>'
+      + '  </div>'
+      + '</div>'
+      ;
+    return $(template);
+  };
 
+
+ var updateCollectionView = function() {
+   var $collection = $(".collection-container .row");
+   $collection.empty();
+ 
+   for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
+       var $newThumbnail = buildAlbumThumbnail();
+       $collection.append($newThumbnail);
+   }
+
+    var onHover = function(event) {
+     $(this).append(buildAlbumOverlay("/album.html"));
+   };
+
+    var offHover = function(event) {
+    $(this).find('.collection-album-image-overlay').remove();
+    };
+
+    $collection.find('.collection-album-image-container').hover(onHover, offHover);
+
+ };
+ 
 
 if (document.URL.match(/\/collection.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
-      var $collection = $(".collection-container .row");
-     $collection.empty();
-   
-     for (var i = 0; i < Math.floor((Math.random() * (100 - 25)) + 25); i++) {
-       var $newThumbnail = buildAlbumThumbnail();
-       $collection.append($newThumbnail);
-     }
+      updateCollectionView();
+
    });
- }
-*/
-console.log("Hello");
-       
+ };
+
+
+
 
 });
 
@@ -418,4 +315,3 @@ $( ".navbar-header" ).click(function() {
 
 ;
 //# sourceMappingURL=app.js.map
->>>>>>> album-jquery
