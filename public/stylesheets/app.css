@@ -3,14 +3,14 @@ html {
 
 body {
   font-family: 'Open Sans';
+  color: white;
   min-height: 100%;
-  background: linear-gradient(0deg, #2b1339, #380c77); 
-  background: -webkit-linear-gradient(0deg,#2b1339, #380c77));
-  }
-
+  background: linear-gradient(0deg, #2b1339, #380c77);
+  background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
 
 body.landing {
-  background: #5b5579; }
+  background: linear-gradient(0deg, #2b1339, #380c77);
+  background: -webkit-linear-gradient(0deg, #2b1339, #380c77); }
 
 body.collection {
   background: linear-gradient(0deg, #2b1339, #380c77);
@@ -20,10 +20,7 @@ body.collection {
   background-color: rgba(123, 70, 163, 0.9); }
 
 body.landing .navbar {
-
   margin-bottom: 0; }
-
- 
 
 .hero-content {
   background: #2f1d57;
@@ -66,10 +63,6 @@ body.landing .navbar {
   margin-bottom: 20px; }
 
 .album-header-information h3, .album-header-information h4, .album-header-information h5 {
-
-
-  color:#FFF;
-
   line-height: 150%; }
 
 .album-header-information h3 {
@@ -88,7 +81,6 @@ body.landing .navbar {
   font-weight: 300; }
 
 .table.album-song-listing td {
-  color:#FFF;
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
 
@@ -110,10 +102,8 @@ body.landing .navbar {
 .collection-album-container .caption p a.album-name {
   color: white; }
 
-
 .collection-album-container img {
   max-width: 100%; }
-
 
 
 /*# sourceMappingURL=app.css.map*/

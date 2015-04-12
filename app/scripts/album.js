@@ -1,10 +1,4 @@
-if (document.URL.match(/\/album.html/)) {
-   // Wait until the HTML is fully processed.
-   $(document).ready(function() {
-     console.log("album.js")
-   });
- }
-/*
+
 
  var createSongRow = function(songNumber, songName, songLength) {
    var template =
@@ -93,4 +87,4 @@ var changeAlbumView = function(album) {
    });
  }
 
-*/
+
