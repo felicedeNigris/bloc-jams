@@ -147,6 +147,26 @@ var changeAlbumView = function(album) {
    $seekBars.click(function(event) {
      updateSeekPercentage($(this), event);
    });
+
+ $seekBars.find('.thumb').mousedown(function(event){
+    var $seekBar = $(this).parent();
+
+    $seekBar.addClass('no-animate');
+
+ 
+    $(document).bind('mousemove.thumb', function(event){
+      updateSeekPercentage($seekBar, event);
+    });
+ 
+    //cleanup
+    $(document).bind('mouseup.thumb', function(){
+      $seekBar.removeClass('no-animate');
+      $(document).unbind('mousemove.thumb');
+      $(document).unbind('mouseup.thumb');
+    });
+ 
+  });
+
  
  };
 console.log("this is album.js");
