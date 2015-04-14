@@ -183,7 +183,8 @@ require.register("scripts/album", function(exports, require, module) {
        { name: 'Wrong phone number', length: '2:15'}
      ]
  }; 
-
+  
+  // Album View Function
 
 var changeAlbumView = function(album) {
    // Update the album title
@@ -216,18 +217,48 @@ var changeAlbumView = function(album) {
 
 
 
- // This 'if' condition is used to prevent the jQuery modifications
+
+// End of Album View Function 
+
+ var updateSeekPercentage = function($seekBar, event) {
+   var barWidth = $seekBar.width();
+   var offsetX = event.pageX - $seekBar.offset().left; // get mouse x offset here
+ 
+   var offsetXPercent = (offsetX  / barWidth) * 100;
+   offsetXPercent = Math.max(0, offsetXPercent);
+   offsetXPercent = Math.min(100, offsetXPercent);
+ 
+   var percentageString = offsetXPercent + '%';
+   $seekBar.find('.fill').width(percentageString);
+   $seekBar.find('.thumb').css({left: percentageString});
+ }
+
+
+ var setupSeekBars = function() {
+ 
+   $seekBars = $('.player-bar .seek-bar');
+   $seekBars.click(function(event) {
+     updateSeekPercentage($(this), event);
+   });
+ 
+ };
+console.log("this is album.js");
+
+
+
+
+
+// This 'if' condition is used to prevent the jQuery modifications
  // from happening on non-Album view pages.
  //  - Use a regex to validate that the url has "/album" in its path.
  if (document.URL.match(/\/album.html/)) {
    // Wait until the HTML is fully processed.
    $(document).ready(function() {
        console.log("album.js")
-       changeAlbumView(albumPicasso);
+       changeAlbumView(albumPicasso)
+       setupSeekBars();
    });
  }
-
-console.log("this is album.js");
 
 
 
