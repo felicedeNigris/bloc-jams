@@ -25,4 +25,8 @@ This is HTML5 application, built with [Brunch](http://brunch.io).
 
 * URL page for album view is : http://bloc-jams-felice.herokuapp.com/album.html
 
-* URL page for album collection is : http://bloc-jams-felice.herokuapp.com/collection.html 
+* URL page for album collection is : http://bloc-jams-felice.herokuapp.com/collection.html
+
+*URL page for profile settings is: http://bloc-jams-felice.herokuapp.com/profile.html
+
+ 
