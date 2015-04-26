@@ -1,37 +1,78 @@
 <!DOCTYPE html>
-<html ng-app="BlocJams">
-  <head>
-    <title></title>
-
+ <html>
+   <head>
+     <title>Bloc Jams</title>
      <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
-     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="/javascripts/vendor.js"></script>
      <script src="/javascripts/app.js"></script>
      <script>
        require('scripts/app');
      </script>
 
+   </head>
+   <body class='collection'>
 
-
-  </head>
-    <body>
-     <nav class="player-header-nav navbar"> <!-- Nav Bar -->
-      <div class="container">
-        <div class="navbar-header"> 
-          <a ui-sref='landing' class='logo navbar-left'>
-            <img src="/images/blocjams.png">
-          </a>
-        </div>
-          <ul class="nav navbar-nav navbar-right">
-             <li><a ui-sref='collection'>Library</a></li>
-          </ul>
+  <nav class="player-header-nav navbar">
+    <div class="container">
+      <div class='navbar-header'> <!-- Nav Bar -->
+        <a class='logo navbar-left'>
+          <img src="/images/blocjams.png">
+        </a>
       </div>
-     </nav> 
-     <!-- Render templates here -->
-     <div ui-view></div>
-   </body>
-</html> 
+    </div>
+  </nav>
+  <div class="collection-container container">
+    <div class='row'> <!-- Album Header -->
+      <div class="collection-album-container col-md-2">
+        <img src="/images/album-placeholder.png"/>
+        <div class='collection-album-info caption'>
+          <p>
+            <a class='album-name' href="/album.html"> The Colors </a>
+            <br/>
+            <a href="/album.html"> Pablo Picasso </a>
+            <br/>
+            X songs
+            <br/>
+          </p>
+        </div>
+      </div>
+
+      <div class="collection-album-container col-md-2">
+        <img src="/images/album-placeholder.png"/>
+        <div class='collection-album-info caption'>
+          <p>
+            <a class='album-name' href="/album.html"> The Colors </a>
+            <br/>
+            <a href="/album.html"> Pablo Picasso </a>
+            <br/>
+            X songs
+            <br/>
+          </p>
+        </div>
+      </div>
+
+      <div class="collection-album-container col-md-2">
+        <img src="/images/album-placeholder.png"/>
+        <div class='collection-album-info caption'>
+          <p>
+            <a class='album-name' href="/album.html"> The Colors </a>
+            <br/>
+            <a href="/album.html"> Pablo Picasso </a>
+            <br/>
+            X songs
+            <br/>
+          </p>
+        </div>
+      </div>
+    </div> <!-- End of Album Header -->
+
+
+  </div> <!-- end of collection-container -->
+</body>
+     
+ </html>
