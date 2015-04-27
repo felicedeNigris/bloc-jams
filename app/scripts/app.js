@@ -1,4 +1,4 @@
-var albumPicasso = {
+ var albumPicasso = {
    name: 'The Colors',
    artist: 'Pablo Picasso',
    label: 'Cubism',
@@ -15,8 +15,7 @@ var albumPicasso = {
  };
  
  
- 
- var blocJams = angular.module('BlocJams', ['ui.router']);
+ blocJams = angular.module('BlocJams', ['ui.router']);
  
  blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
    $locationProvider.html5Mode(true);
@@ -25,7 +24,7 @@ var albumPicasso = {
      url: '/',
      controller: 'Landing.controller',
      templateUrl: '/templates/landing.html'
-   });
+   })
    $stateProvider.state('collection', {
      url: '/collection',
      controller: 'Collection.controller',
@@ -76,7 +75,7 @@ var albumPicasso = {
   blocJams.controller('Collection.controller', ['$scope', function($scope) {
    $scope.albums = [];
 
-    for (var i = 0; i < 33; i++) {
+   for (var i = 0; i < 33; i++) {
      $scope.albums.push(angular.copy(albumPicasso));
    }
  }]);
