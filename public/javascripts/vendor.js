@@ -1827,7 +1827,7 @@ if (typeof JSON !== 'object') {
 
     stylesheet: function(){
       [].slice
-        .call(document.querySelectorAll('link[rel="stylesheet"][href]'))
+        .call(document.querySelectorAll('link[rel="stylesheet"][href]:not([data-autoreload="false"]'))
         .forEach(function(link) {
           link.href = cacheBuster(link.href);
         });
